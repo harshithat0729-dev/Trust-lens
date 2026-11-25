@@ -45,7 +45,7 @@ AI TrustLens provides a simple platform where users can submit suspicious links,
 ## 📂 Project Structure
 
 ```text
-AI TrustLens/
+AI Trust-Lens/
 ├── Backend/
 │   └── app.py
 ├── Frontend/
@@ -62,7 +62,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/harshithat0729-dev/Trust-lens.git
-cd trustlens
+cd Trust-lens
 ```
 
 Create a Python virtual environment:
