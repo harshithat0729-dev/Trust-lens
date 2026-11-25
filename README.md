@@ -61,7 +61,7 @@ AI TrustLens/
 Clone the repository:
 
 ```bash
-git clone https://github.com/harshithat0729-dev/trustlens.git
+git clone https://github.com/harshithat0729-dev/Trust-lens.git
 cd trustlens
 ```
 
