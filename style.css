@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7ff;
+    color: #172033;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #ffffff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3b4ed8;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #172033;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #3b4ed8;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #eef0ff, #e4f4ff);
+    width: 100%;
+}
+
+.hero-description {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #5d667a;
+    font-size: 17px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 6vw, 64px);
+    line-height: 1.15;
+    margin-bottom: 24px;
+    overflow-wrap: break-word;
+}
+
+.tagline {
+    color: #3b4ed8;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 6vw, 64px);
+    line-height: 1.15;
+    margin-bottom: 24px;
+}
+
+.hero-description {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #5d667a;
+    font-size: 17px;
+}
+
+.primary-button {
+    display: inline-block;
+    background: #3b4ed8;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.primary-button:hover {
+    background: #2939b5;
+}
+
+.analyzer {
+    max-width: 1000px;
+    margin: 70px auto;
+    padding: 20px;
+}
+
+.analyzer h2,
+.about h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.section-description {
+    text-align: center;
+    color: #687187;
+    margin-bottom: 35px;
+}
+
+.analysis-card {
+    background: white;
+    padding: 30px;
+    margin: 24px 0;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(30, 45, 90, 0.07);
+}
+
+.analysis-card h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.analysis-card p {
+    color: #687187;
+    margin-bottom: 20px;
+}
+
+.analysis-card label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.analysis-card input,
+.analysis-card textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 1px solid #d8ddec;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.analysis-card input:focus,
+.analysis-card textarea:focus {
+    outline: 2px solid #aeb8ff;
+    border-color: #3b4ed8;
+}
+
+.analysis-card button {
+    background: #3b4ed8;
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.analysis-card button:hover {
+    background: #2939b5;
+}
+
+.result-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid #3b4ed8;
+    overflow-wrap: anywhere;
+}
+
+.about {
+    padding: 60px 10%;
+    background: #ffffff;
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: 16px auto;
+    color: #687187;
+}
+
+.about .disclaimer {
+    font-size: 13px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #172033;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .analysis-card {
+        padding: 22px;
+    }
+
+    .analyzer h2,
+    .about h2 {
+        font-size: 26px;
+    }
+}
+#result {
+    white-space: pre-line;
+    line-height: 1.8;
+}
+/* TrustLens result card polish */
+.result-box {
+    margin-top: 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(30, 50, 100, 0.08);
+    line-height: 1.7;
+}
+
+/* TrustLens Safety Tips Design */
+
+.about ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.about ul li {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 18px rgba(30, 50, 100, 0.06);
+    line-height: 1.6;
+    transition: transform 0.2s ease;
+}
+
+.about ul li:hover {
+    transform: translateY(-4px);
+}
+
+/* TrustLens File Upload Design */
+
+#fileInput {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    padding: 16px;
+    border: 2px dashed #a5b4fc;
+    border-radius: 12px;
+    background: #f8faff;
+    cursor: pointer;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+#fileInput:hover {
+    border-color: #4053df;
+    background: #eef2ff;
+}
